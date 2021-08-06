@@ -1,0 +1,319 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:app:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>400 Bad Request</title>
+<h1>Bad Request</h1>
+<p>Failed to decode JSON object: Expecting value: line 1 column 1 (char 0)</p>
+
+INFO:werkzeug:127.0.0.1 - - [28/Jun/2021 14:01:33] "[31m[1mGET /student_information HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Home\\Desktop\\Flask\\app\\utils\\logging.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Home\\Desktop\\Flask\\app\\utils\\logging.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Home\\Desktop\\Flask\\app\\utils\\logging.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Home\\Desktop\\Flask\\app\\utils\\logging.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:info is c
+DEBUG:mysql.connector.connection:new_auth_plugin: mysql_native_password
+DEBUG:app:{
+  "Student_information": [
+    {
+      "Student_Name": "Manisha", 
+      "Student_department": "ECE", 
+      "id": 2
+    }, 
+    {
+      "Student_Name": "Nandy", 
+      "Student_department": "ECE", 
+      "id": 3
+    }, 
+    {
+      "Student_Name": "Nardhini", 
+      "Student_department": "ECE", 
+      "id": 13
+    }, 
+    {
+      "Student_Name": "sharon", 
+      "Student_department": "ECE", 
+      "id": 15
+    }, 
+    {
+      "Student_Name": "tharunika", 
+      "Student_department": "ECE", 
+      "id": 19
+    }, 
+    {
+      "Student_Name": "vicky", 
+      "Student_department": "ECE", 
+      "id": 20
+    }, 
+    {
+      "Student_Name": "vikram", 
+      "Student_department": "ECE", 
+      "id": 27
+    }
+  ]
+}
+
+INFO:werkzeug:127.0.0.1 - - [28/Jun/2021 14:02:47] "GET /student_information HTTP/1.1" 200 -
+INFO:app:info is c
+DEBUG:app:[
+  {
+    "Student_Name": "Manisha", 
+    "Student_department": "ECE", 
+    "id": 2
+  }
+]
+
+INFO:werkzeug:127.0.0.1 - - [28/Jun/2021 14:03:02] "GET /student_informations?id=2 HTTP/1.1" 200 -
+INFO:app:info is c
+DEBUG:app:{
+  "message": "Student information deleted", 
+  "status": 200
+}
+
+INFO:werkzeug:127.0.0.1 - - [28/Jun/2021 14:04:08] "DELETE /student_information?id=27 HTTP/1.1" 200 -
+INFO:app:info is c
+DEBUG:app:{
+  "message": "Student information updated", 
+  "status": 200
+}
+
+INFO:werkzeug:127.0.0.1 - - [28/Jun/2021 14:04:56] "PUT /student_information?id=20 HTTP/1.1" 200 -
+INFO:app:info is c
+DEBUG:app:{
+  "Student_information": [
+    {
+      "Student_Name": "Manisha", 
+      "Student_department": "ECE", 
+      "id": 2
+    }, 
+    {
+      "Student_Name": "Nandy", 
+      "Student_department": "ECE", 
+      "id": 3
+    }, 
+    {
+      "Student_Name": "Nardhini", 
+      "Student_department": "ECE", 
+      "id": 13
+    }, 
+    {
+      "Student_Name": "sharon", 
+      "Student_department": "ECE", 
+      "id": 15
+    }, 
+    {
+      "Student_Name": "tharunika", 
+      "Student_department": "ECE", 
+      "id": 19
+    }, 
+    {
+      "Student_Name": "vinoth", 
+      "Student_department": "ECE", 
+      "id": 20
+    }
+  ]
+}
+
+INFO:werkzeug:127.0.0.1 - - [28/Jun/2021 14:05:03] "GET /student_information HTTP/1.1" 200 -
+INFO:app:info is c
+DEBUG:app:{
+  "message": "Student information created", 
+  "status": 200
+}
+
+INFO:werkzeug:127.0.0.1 - - [28/Jun/2021 14:05:12] "POST /student_information HTTP/1.1" 200 -
+INFO:app:info is c
+DEBUG:app:{
+  "Student_information": [
+    {
+      "Student_Name": "Manisha", 
+      "Student_department": "ECE", 
+      "id": 2
+    }, 
+    {
+      "Student_Name": "Nandy", 
+      "Student_department": "ECE", 
+      "id": 3
+    }, 
+    {
+      "Student_Name": "Nardhini", 
+      "Student_department": "ECE", 
+      "id": 13
+    }, 
+    {
+      "Student_Name": "sharon", 
+      "Student_department": "ECE", 
+      "id": 15
+    }, 
+    {
+      "Student_Name": "tharunika", 
+      "Student_department": "ECE", 
+      "id": 19
+    }, 
+    {
+      "Student_Name": "vinoth", 
+      "Student_department": "ECE", 
+      "id": 20
+    }, 
+    {
+      "Student_Name": "vithun", 
+      "Student_department": "ECE", 
+      "id": 50
+    }
+  ]
+}
+
+INFO:werkzeug:127.0.0.1 - - [28/Jun/2021 14:05:19] "GET /student_information HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Home\\Desktop\\Flask\\app\\utils\\logging.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Home\\Desktop\\Flask\\app\\utils\\logging.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Home\\Desktop\\Flask\\app\\utils\\logging.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Home\\Desktop\\Flask\\app\\routes\\route.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:app:info login
+DEBUG:mysql.connector.connection:new_auth_plugin: mysql_native_password
+DEBUG:app:{
+  "Student_information": [
+    {
+      "Student_Name": "Manisha", 
+      "Student_department": "ECE", 
+      "id": 2
+    }, 
+    {
+      "Student_Name": "Nandy", 
+      "Student_department": "ECE", 
+      "id": 3
+    }, 
+    {
+      "Student_Name": "Nardhini", 
+      "Student_department": "ECE", 
+      "id": 13
+    }, 
+    {
+      "Student_Name": "sharon", 
+      "Student_department": "ECE", 
+      "id": 15
+    }, 
+    {
+      "Student_Name": "tharunika", 
+      "Student_department": "ECE", 
+      "id": 19
+    }, 
+    {
+      "Student_Name": "vinoth", 
+      "Student_department": "ECE", 
+      "id": 20
+    }, 
+    {
+      "Student_Name": "vithun", 
+      "Student_department": "ECE", 
+      "id": 50
+    }
+  ]
+}
+
+INFO:werkzeug:127.0.0.1 - - [28/Jun/2021 15:02:53] "GET /student_information HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Home\\Desktop\\Flask\\app\\model\\personal.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Home\\Desktop\\Flask\\app\\model\\personal.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Home\\Desktop\\Flask\\app\\model\\personal.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Home\\Desktop\\Flask\\app\\model\\personal.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Home\\Desktop\\Flask\\app\\model\\personal.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Home\\Desktop\\Flask\\app\\model\\personal.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Home\\Desktop\\Flask\\app\\model\\personal.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Home\\Desktop\\Flask\\app\\model\\personal.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Home\\Desktop\\Flask\\app\\model\\personal.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Home\\Desktop\\Flask\\app\\model\\personal.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Home\\Desktop\\Flask\\app\\model\\personal.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Home\\Desktop\\Flask\\app\\model\\personal.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Home\\Desktop\\Flask\\app\\model\\personal.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 136-999-895
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
